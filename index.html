@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ScamShield India — Check a Suspicious Message</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <span class="shield" aria-hidden="true">🛡️</span>
+      <div>
+        <h1>ScamShield India</h1>
+        <p class="tag">Check a message before you click, pay or share.</p>
+      </div>
+    </div>
+    <span class="offline">Works offline · Nothing is uploaded</span>
+  </header>
+
+  <main>
+    <section class="card">
+      <label for="msg" class="lbl">Paste the suspicious SMS / WhatsApp / email message</label>
+      <textarea id="msg" rows="7" placeholder="Example: Dear customer, your SBI account will be blocked today. Update KYC at http://sbi-kyc.xyz and share OTP."></textarea>
+      <div class="row">
+        <button id="check" class="btn primary">Check Message</button>
+        <button id="clear" class="btn">Clear</button>
+        <select id="sample" class="btn" aria-label="Try a sample message">
+          <option value="">Try a sample…</option>
+        </select>
+      </div>
+    </section>
+
+    <section id="result" class="card hidden" aria-live="polite">
+      <div class="score-row">
+        <div class="meter"><div id="bar" class="bar"></div></div>
+        <div class="score"><span id="score">0</span>/100</div>
+      </div>
+      <h2 id="verdict" class="verdict"></h2>
+      <div id="highlight" class="highlight"></div>
+
+      <h3>Warning signs found</h3>
+      <ul id="indicators" class="indicators"></ul>
+
+      <h3>What you should do</h3>
+      <ul id="tips" class="tips"></ul>
+    </section>
+
+    <section class="card help">
+      <h3>Already lost money?</h3>
+      <p>Call <strong>1930</strong> (National Cyber Crime Helpline) immediately, or report at <strong>cybercrime.gov.in</strong>. Report fraud calls/SMS on <strong>sancharsaathi.gov.in</strong> (Chakshu).</p>
+    </section>
+
+    <p class="disclaimer">ScamShield India is an awareness tool. Results are indicative, based on common scam patterns, and cannot guarantee a message is genuine or fraudulent. Always verify through official channels.</p>
+  </main>
+
+  <script src="js/detector.js"></script>
+  <script src="js/samples.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

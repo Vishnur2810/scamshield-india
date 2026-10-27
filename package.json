@@ -1,0 +1,17 @@
+{
+  "name": "scamshield-india",
+  "version": "1.0.0",
+  "description": "Offline, privacy-first web tool that detects common Indian scam SMS/WhatsApp messages and teaches users to stay safe.",
+  "main": "js/detector.js",
+  "scripts": {
+    "test": "node tests/run_tests.js",
+    "start": "python3 -m http.server 8000"
+  },
+  "keywords": ["cybersecurity", "scam-detection", "phishing", "fraud-awareness", "india", "upi", "digital-safety", "social-impact"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Vishnur2810/scamshield-india.git"
+  },
+  "engines": { "node": ">=14" }
+}
